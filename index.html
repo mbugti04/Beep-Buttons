@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="align">
+		<img id="cat" src="speaker.gif" width="40%">
+	</div>
+	<div class="align">
+		<div class="row">
+			<button class="button" type="button" onclick="let a1 = new Audio('assets/sound1.mp3'); a1.volume = volume; a1.play();">&nbsp;</button>
+			<button class="button" type="button" onclick="let a2 = new Audio('assets/sound2.wav'); a2.volume = volume;  a2.play()">&nbsp;</button>
+			<button class="button" type="button" onclick="let a3 = new Audio('assets/sound3.mp3'); a3.volume = volume;  a3.play()">&nbsp;</button>
+		</div>
+		<div class="row">
+			<button class="button" type="button" onclick="let a4 = new Audio('assets/sound4.wav'); a4.volume = volume;  a4.play()">&nbsp;</button>
+			<button class="button" type="button" onclick="let a5 = new Audio('assets/sound5.mp3'); a5.volume = volume;  a5.play()">&nbsp;</button>
+			<button class="button" type="button" onclick="let a6 = new Audio('assets/sound6.wav'); a6.volume = volume;  a6.play()">&nbsp;</button>
+		</div>
+		<div class="row">
+			<label for="volumeslider">volume</label>
+			<input id="volumeslider" type="range" min="0" max="100" value="1" class="slider" id="volume">
+		</div>
+	</div>
+	<script>
+		var volume = 1;
+		 var slider = document.getElementById("volumeslider");
+		 slider.oninput = function() {
+			volume = this.value / 100;
+			console.log(this.value / 100);
+		 }
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.align {
+	text-align: center;
+}
+.button {
+	background: radial-gradient(#e66465, #9198e5);
+	width: 11%;
+	display: inline-block;
+	font-size: 32px;
+	padding: 66px;	
+	transition: 0.1s ease-out all;
+}
+.button:active {
+	width: 11%;
+	display: inline-block;
+	font-size: 32px;
+	padding: 66px;
+	box-shadow: 0px 0px 200px #9198e5 inset;
+}
+#volumeslider {
+	width: 25%;
+}
